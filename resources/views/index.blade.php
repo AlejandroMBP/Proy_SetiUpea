@@ -53,7 +53,7 @@
                 <div class="container-fluid">
                     <div class="main-menu__logo">
                         <a href="index.html">
-                            <img src="assets/images/logo-light.png" width="96" height="34" alt="nisoz">
+                            <img src="assets/images/logo.png" width="90" height="90" alt="nisoz">
                         </a>
                     </div><!-- /.main-menu__logo -->
                     <div class="main-menu__nav">
@@ -124,16 +124,16 @@
                         <div class="main-slider-three__bg" style="background-image: url(assets/images/shapes/slider-3-bg-1.png);"></div>
                         <!-- bg image end -->
                         <div class="main-slider-three__shape-1">
-                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-2">
-                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-2.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-3">
-                            <img src="assets/images/shapes/slider-3-shape-3.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-bg">
-                            <img src="assets/images/backgrounds/slider-3-shape-1.jpg" alt="nisoz">
+                            <img src="{{asset('assets/images/backgrounds/grupo.png')}}" alt="nisoz">
                         </div><!-- shape-backgorund -->
                         <div class="container">
                             <div class="row">
@@ -168,16 +168,16 @@
                         <div class="main-slider-three__bg" style="background-image: url(assets/images/shapes/slider-3-bg-1.png);"></div>
                         <!-- bg image end -->
                         <div class="main-slider-three__shape-1">
-                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-2">
-                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-2.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-3">
-                            <img src="assets/images/shapes/slider-3-shape-3.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-bg">
-                            <img src="assets/images/backgrounds/slider-3-shape-2.jpg" alt="nisoz">
+                            <img src="{{asset('assets/images/backgrounds/fondo1.png')}}" alt="nisoz">
                         </div><!-- shape-backgorund -->
                         <div class="container">
                             <div class="row">
@@ -211,16 +211,16 @@
                         <div class="main-slider-three__bg" style="background-image: url(assets/images/shapes/slider-3-bg-1.png);"></div>
                         <!-- bg image end -->
                         <div class="main-slider-three__shape-1">
-                            <img src="assets/images/shapes/slider-3-shape-1.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-2">
-                            <img src="assets/images/shapes/slider-3-shape-2.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-2.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-3">
-                            <img src="assets/images/shapes/slider-3-shape-3.png" alt="nisoz">
+                            <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                         </div><!-- shape-one -->
                         <div class="main-slider-three__shape-bg">
-                            <img src="assets/images/backgrounds/slider-3-shape-3.jpg" alt="nisoz">
+                            <img src="{{asset('assets/images/backgrounds/fondo2.png')}}" alt="nisoz">
                         </div><!-- shape-backgorund -->
                         <div class="container">
                             <div class="row">
@@ -252,7 +252,7 @@
         <!--Main Slider End-->
         <!-- Service Start -->
         <section class="service-three" id="services">
-            <div class="service-three__bg" style="background-image: url(assets/images/shapes/service-bg-3.jpg);"></div>
+            <div class="service-three__bg" style="background-image: url(assets/images/shapes/shapes-2/testimonial-bg-2.png);"></div>
             <div class="container">
                 <div class="row wow fadeInUp" data-wow-delay="100ms">
                     <div class="col-md-7">
@@ -334,6 +334,7 @@
         <!-- Service Start -->
         <!-- About Start -->
         <section class="about-three" id="about">
+          <!--  <div class="service-three__bg" style="background-image: url(assets/images/shapes/shapes-2/testimonial-bg-2.png);"></div>< -agrega un fondo no esta definido-->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
@@ -475,7 +476,7 @@
                         <div class="feature-two__item">
                             <!-- feature-start -->
                             <div class="feature-two__thumb">
-                                <img src="assets/images/resources/feature-1.jpg" alt="nisoz">
+                                <img src="assets/images/resources/p5.webp" alt="nisoz">
                             </div>
                             <div class="feature-two__normal">
                                 <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
@@ -492,7 +493,7 @@
                         <div class="feature-two__item">
                             <!-- feature-start -->
                             <div class="feature-two__thumb">
-                                <img src="assets/images/resources/feature-2.jpg" alt="nisoz">
+                                <img src="assets/images/resources/p4.jpg" alt="nisoz">
                             </div>
                             <div class="feature-two__normal">
                                 <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
@@ -509,7 +510,7 @@
                         <div class="feature-two__item">
                             <!-- feature-start -->
                             <div class="feature-two__thumb">
-                                <img src="assets/images/resources/feature-3.jpg" alt="nisoz">
+                                <img src="assets/images/resources/p3.jpg" alt="nisoz">
                             </div>
                             <div class="feature-two__normal">
                                 <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
@@ -528,7 +529,7 @@
         <!-- Feature End -->
         <!-- Call To Action Start -->
         <section class="cta-three jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%">
-            <div class="cta-three__bg jarallax-img" style="background-image: url(assets/images/backgrounds/cta-bg-3.jpg);">
+            <div class="cta-three__bg jarallax-img" style="background-image: url(assets/images/backgrounds/upea.jpg);">
             </div>
             <div class="container">
                 <div class="row">
@@ -912,7 +913,7 @@
                             <div class="result"></div>
                         </div>
                         <div class="contact-two__thumb wow fadeInUp" data-wow-delay="400ms">
-                            <img src="assets/images/resources/contact-3.png" alt="nisoz" />
+                            <img src="assets/images/resources/logo_sie.png" alt="nisoz" />
                         </div>
                     </div>
                 </div>
