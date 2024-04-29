@@ -3402,7 +3402,7 @@ h6 {
 .main-menu__phone i {
   width: 50px;
   height: 50px;
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-white);
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -7951,7 +7951,7 @@ body.locked .page-wrapper {
 --------------------------------------------------------------*/
 .portfolio-one {
   position: relative;
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-base);
   padding: 120px 0 90px;
 }
 /*.portfolio-one::before{

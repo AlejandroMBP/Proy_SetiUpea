@@ -59,8 +59,7 @@
                     <div class="main-menu__nav">
                         <ul class="main-menu__list one-page-scroll-menu">
                             <li class="scrollToLink current"><a href="#home">INICIO</a></li>
-                            <li class="scrollToLink"><a href="#services">Servicios</a></li>
-                            <li class="scrollToLink"><a href="#about">About</a></li>
+                            <li class="scrollToLink"><a href="#services">SERVICIOS</a></li>
                             <li class="scrollToLink"><a href="#portfolio">NUESTROS PROFECIONALES</a></li>
                             <li class="scrollToLink"><a href="#blog">OFERTAS</a></li>
                             <li class="scrollToLink"><a href="#contact">SOPORTE TENICO</a></li>
@@ -70,24 +69,27 @@
                         <a href="#" class="main-menu__toggler mobile-nav__toggler">
                             <i class="fa fa-bars"></i>
                         </a><!-- /.mobile menu btn -->
-                        <a href="#" class="main-menu__phone">
+                        <a href="https://wa.me/" class="main-menu__phone">
                             <i class="icon-telephone"></i>
-                            <span class="main-menu__phone">75232232</span>
+                            <span class="main-menu__phone"></span>
                         </a><!-- /.phone-number -->
                         @if (Route::has('login'))
                             @auth
                             <a href="{{ url('/dashboard') }}" class="main-menu__cart cart-toggler">
                                 <!--<i class="icon-magnifying-glass"></i>  class="main-menu__search search-toggler-->
-                                Regresar
+                                <i class="fas fa-arrow-left fa-lg"></i>
                             </a><!-- /.search btn -->
                             @else
                             <a href="{{ route('login') }}" class="main-menu__cart cart-toggler">
+                                <i class="fas fa-sign-in-alt fa-lg"></i>
                                 <!--<i class="icon-shopping-cart"></i>
                                 <span class="main-menu__cart__count">0</span>-->
-                                Ingresar
+
                             </a><!-- /.cart btn -->
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="main-menu__cart cart-toggler">Registrate</a>
+                                    <a href="{{ route('register') }}" class="main-menu__cart cart-toggler">
+                                    <i class="fas fa-user-plus fa-lg"></i>
+                                    </a>
                                 @endif
                             @endauth
                         @endif
@@ -333,199 +335,10 @@
         </section>
         <!-- Service Start -->
         <!-- About Start -->
-        <section class="about-three" id="about">
-          <!--  <div class="service-three__bg" style="background-image: url(assets/images/shapes/shapes-2/testimonial-bg-2.png);"></div>< -agrega un fondo no esta definido-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="about-three__thumb wow fadeInLeft" data-wow-delay="300ms">
-                            <!-- about thumb start -->
-                            <div class="about-three__thumb__one">
-                                <img src="assets/images/resources/about-3-1.jpg" alt="nisoz">
-                                <div class="about-three__thumb__triangle">
-                                    <span class="about-three__thumb__triangle-left"></span>
-                                    <span class="about-three__thumb__triangle-right"></span>
-                                </div>
-                            </div>
-                            <div class="about-three__thumb__two nisoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
-                                <img src="assets/images/resources/about-3-2.jpg" alt="nisoz">
-                            </div>
-                        </div><!-- about thumb end -->
-                    </div>
-                    <div class="col-lg-5 wow fadeInRight" data-wow-delay="300ms">
-                        <div class="about-three__content">
-                            <!-- about content start-->
-                            <div class="section-title">
-                                <div class="section-title__triangle">
-                                    <span class="section-title__triangle-left"></span>
-                                    <span class="section-title__triangle-right"></span>
-                                </div>
-                                <h5 class="section-title__tagline">Welcome to agency</h5>
-                                <h2 class="section-title__title">are you ready to grow your business</h2>
-                            </div><!-- section-title -->
-                            <p class="about-three__text">
-                                There are many variations of simply free text passages of available but the majority have
-                                suffered alteration
-                                in some form, by injected hum randomised words which don't slightly.
-                            </p>
-                            <div class="row">
-                                <div class="col-xl-5 col-md-6">
-                                    <div class="about-three__box">
-                                        <div class="about-three__box__icon"><span class="icon-development-1"></span></div>
-                                        <h4 class="about-three__box__title">Businesses <br>Growth</h4>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 col-md-6">
-                                    <div class="about-three__box about-three__box-ml10">
-                                        <div class="about-three__box__icon"><span class="icon-social-media"></span></div>
-                                        <h4 class="about-three__box__title">Marketing <br>Solution</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="about-three__lists">
-                                <li><span class="fa fa-check-circle"></span>Refresing to get such a personal touch.</li>
-                                <li><span class="fa fa-check-circle"></span>Duis aute irure dolor in reprehenderit in voluptate.
-                                </li>
-                            </ul>
-                            <a href="about.html" class="nisoz-btn">
-                                <span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span>
-                                <span class="nisoz-btn__text">Discover More</span>
-                            </a><!-- /.btn -->
-                        </div><!-- about content end-->
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- About End -->
-        <div class="client-carousel @@extraClassName">
-            <div class="container">
-                <h5 class="client-carousel__tilte"><span>1K+ Brands Trust Us</span></h5><!-- section-title -->
-                <div class="client-carousel__one nisoz-owl__carousel owl-theme owl-carousel" data-owl-options='{
-            "items": 5,
-            "margin": 65,
-            "smartSpeed": 700,
-            "loop":true,
-            "autoplay": 6000,
-            "nav":false,
-            "dots":false,
-            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-            "responsive":{
-                "0":{
-                    "items":1,
-                    "margin": 0
-                },
-                "360":{
-                    "items":2,
-                    "margin": 0
-                },
-                "575":{
-                    "items":3,
-                    "margin": 30
-                },
-                "768":{
-                    "items":3,
-                    "margin": 40
-                },
-                "992":{
-                    "items": 4,
-                    "margin": 40
-                },
-                "1200":{
-                    "items": 5
-                }
-            }
-            }'>
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                    <div class="client-carousel__one__item">
-                        <img src="assets/images/brand/brand-1-1.png" alt="nisoz">
-                    </div><!-- /.owl-slide-item-->
-                </div><!-- /.thm-owl__slider -->
-            </div><!-- /.container -->
-        </div><!-- /.client-carousel -->
+        <!-- /.client-carousel -->
         <!-- Feature Start -->
-        <section class="feature-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="feature-two__item">
-                            <!-- feature-start -->
-                            <div class="feature-two__thumb">
-                                <img src="assets/images/resources/p5.webp" alt="nisoz">
-                            </div>
-                            <div class="feature-two__normal">
-                                <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
-                                <h3 class="feature-two__normal__title">Professional<br> development services</h3>
-                            </div><!-- feature-normal-content -->
-                            <div class="feature-two__hover">
-                                <h3 class="feature-two__hover__title">Professional<br> development services</h3>
-                                <p class="feature-two__hover__text">Duis aute irure dolor in reprehenderit in voluptate.</p>
-                                <a class="feature-two__hover__btn" href="services.html"><span class="icon-right-arrow"></span></a>
-                            </div><!-- feature-hover-content -->
-                        </div><!-- feature-end -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="feature-two__item">
-                            <!-- feature-start -->
-                            <div class="feature-two__thumb">
-                                <img src="assets/images/resources/p4.jpg" alt="nisoz">
-                            </div>
-                            <div class="feature-two__normal">
-                                <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
-                                <h3 class="feature-two__normal__title">We grow<br> your businesses</h3>
-                            </div><!-- feature-normal-content -->
-                            <div class="feature-two__hover">
-                                <h3 class="feature-two__hover__title">We grow<br> your businesses</h3>
-                                <p class="feature-two__hover__text">Duis aute irure dolor in reprehenderit in voluptate.</p>
-                                <a class="feature-two__hover__btn" href="services.html"><span class="icon-right-arrow"></span></a>
-                            </div><!-- feature-hover-content -->
-                        </div><!-- feature-end -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="feature-two__item">
-                            <!-- feature-start -->
-                            <div class="feature-two__thumb">
-                                <img src="assets/images/resources/p3.jpg" alt="nisoz">
-                            </div>
-                            <div class="feature-two__normal">
-                                <div class="feature-two__normal__icon"><span class="icon-right-arrow"></span></div>
-                                <h3 class="feature-two__normal__title">Get free<br> business advices</h3>
-                            </div><!-- feature-normal-content -->
-                            <div class="feature-two__hover">
-                                <h3 class="feature-two__hover__title">Get free<br> business advices</h3>
-                                <p class="feature-two__hover__text">Duis aute irure dolor in reprehenderit in voluptate.</p>
-                                <a class="feature-two__hover__btn" href="services.html"><span class="icon-right-arrow"></span></a>
-                            </div><!-- feature-hover-content -->
-                        </div><!-- feature-end -->
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Feature End -->
         <!-- Call To Action Start -->
         <section class="cta-three jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%">
@@ -552,70 +365,7 @@
         </section>
         <!-- Call To Action End -->
         <!-- Feature Start -->
-        <section class="feature-three">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="300ms">
-                        <div class="section-title">
-                            <div class="section-title__triangle">
-                                <span class="section-title__triangle-left"></span>
-                                <span class="section-title__triangle-right"></span>
-                            </div>
-                            <h5 class="section-title__tagline">business growth</h5>
-                            <h2 class="section-title__title">Ready to give a new<br> business look</h2>
-                        </div><!-- section-title -->
-                        <h4 class="feature-three__heading">Proin est lacus, sagittis lobortis iaculise get.</h4>
-                        <p class="feature-three__text">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form,
-                            by injected humour, or randomised words which don't look even slightly believable.
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-three__box">
-                                    <div class="feature-three__box__icon"><span class="icon-growth"></span></div>
-                                    <h5 class="feature-three__box__title">Market Management</h5>
-                                    <p class="feature-three__box__text">Lorem ipsum is not tex dolor sit amet, consectetur
-                                        notted.</p>
-                                </div><!-- icon-box -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-three__box">
-                                    <div class="feature-three__box__icon"><span class="icon-increment"></span></div>
-                                    <h5 class="feature-three__box__title">Business Analysis</h5>
-                                    <p class="feature-three__box__text">Lorem ipsum is not tex dolor sit amet, consectetur
-                                        notted.</p>
-                                </div><!-- icon-box -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-three__circle nisoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 20, "speed": 700, "scale": 1 }'>
-                                    <h5 class="feature-three__circle__text">Explore marketing Services</h5>
-                                </div><!-- circle-box -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-three__thumb">
-                                    <img src="assets/images/resources/feature-4.jpg" alt="nisoz">
-                                </div><!-- feature-image -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-three__thumb">
-                                    <img src="assets/images/resources/feature-5.jpg" alt="nisoz">
-                                </div><!-- feature-image -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-three__circle feature-three__circle-two nisoz-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 20, "speed": 700, "scale": 1 }'>
-                                    <h5 class="feature-three__circle__text">Get a professional solutions</h5>
-                                </div><!-- circle-box -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Feature End -->
         <!-- Portfolio Start -->
         <section class="portfolio-one portfolio-one__home3" id="portfolio">
@@ -698,46 +448,7 @@
         </section>
         <!-- Portfolio End -->
         <!-- Choose Start -->
-        <section class="choose-two">
-            <div class="choose-two__bg wow slideInRight" data-wow-delay="200ms"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 wow slideInLeft" data-wow-delay="200ms">
-                        <div class="nisoz-stretch-element-inside-column">
-                            <div class="choose-two__thumb">
-                                <img src="assets/images/resources/choose-2.jpg" alt="ogency">
-                                <div class="choose-two__content wow fadeInUp" style="background-image: url(assets/images/shapes/choose.png);" data-wow-delay="700ms">
-                                    <div class="choose-two__content__icon"><span class="icon-trophy"></span></div>
-                                    <h4 class="choose-two__content__title">Award winning<br> top level web<br> agency</h4>
-                                </div><!-- choose-content -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="section-title">
-                            <div class="section-title__triangle">
-                                <span class="section-title__triangle-left"></span>
-                                <span class="section-title__triangle-right"></span>
-                            </div>
-                            <h5 class="section-title__tagline">agency benefits</h5>
-                            <h2 class="section-title__title">why you should choose our nisoz agency</h2>
-                        </div><!-- section-title -->
-                        <div class="choose-two__box">
-                            <div class="choose-two__box__icon"><span class="icon-team"></span></div>
-                            <h5 class="choose-two__box__title">the largest agency</h5>
-                            <p class="choose-two__box__text">Aenean placerat ut lacus nec simply free pulvinar. Donec eu leo,
-                                ante at, commodo diam.</p>
-                        </div><!-- icon-box -->
-                        <div class="choose-two__box">
-                            <div class="choose-two__box__icon"><span class="icon-good-quality"></span></div>
-                            <h5 class="choose-two__box__title">high quality products</h5>
-                            <p class="choose-two__box__text">Aenean placerat ut lacus nec simply free pulvinar. Donec eu leo,
-                                ante at, commodo diam.</p>
-                        </div><!-- icon-box -->
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Choose End -->
         <!-- Blog Start -->
         <section class="blog-one" id="blog">
