@@ -28,7 +28,7 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="main-menu__cart cart-toggler" target="_blank">
                             <!--<i class="icon-magnifying-glass"></i>  class="main-menu__search search-toggler-->
-                        <i class="fas fa-arrow-left fa-lg"></i>
+                            <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
                         </a><!-- /.search btn -->
                         @else
                             <a href="{{ route('login') }}" class="main-menu__cart cart-toggler" target="_blank">

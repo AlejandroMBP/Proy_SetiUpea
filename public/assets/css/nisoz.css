@@ -45,6 +45,7 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -5432,7 +5433,7 @@ body.locked .page-wrapper {
   visibility: hidden;
   transition: transform 1100ms ease, opacity 1100ms ease;
   transform: translateX(100%);
-  background-color: #0029b1; /*var(--nisoz-black);*/
+  background-color:  #0029b1; /*var(--nisoz-black);*/
   opacity: .6;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
