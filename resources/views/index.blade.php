@@ -59,7 +59,7 @@
                     <div class="main-menu__nav">
                         <ul class="main-menu__list one-page-scroll-menu">
                             <li class="scrollToLink current"><a href="#home">INICIO</a></li>
-                            <li class="scrollToLink"><a href="#services">Services</a></li>
+                            <li class="scrollToLink"><a href="#services">Servicios</a></li>
                             <li class="scrollToLink"><a href="#about">About</a></li>
                             <li class="scrollToLink"><a href="#portfolio">NUESTROS PROFECIONALES</a></li>
                             <li class="scrollToLink"><a href="#blog">OFERTAS</a></li>
