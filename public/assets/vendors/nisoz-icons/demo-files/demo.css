@@ -150,3 +150,8 @@ p {
   font-size: 32px;
 }
 
+.imagen-about-us {
+  width: 100px; /* Define el ancho deseado */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
