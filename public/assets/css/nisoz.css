@@ -5438,6 +5438,12 @@ body.locked .page-wrapper {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.main-slider-three__shape-bg img {
+  width: 100px; /* Tamaño de ancho deseado */
+  height: 830px; /* Tamaño de alto deseado */
+}
+
+
 @media (max-width: 1600px) {
   .main-slider-three__shape-bg {
     right: -200px;
