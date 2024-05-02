@@ -44,6 +44,7 @@
             <img src="{{ asset('assets/images/backgrounds/' . session('imageName')) }}" alt="Imagen actual" class="imagen-about-us" style="width: 100px;">
             <div>
                 <a href="{{ route('delete.image', ['imageName' => session('imageName')]) }}">Eliminar</a>
+
                 <!-- Agrega un formulario para "Actualizar" -->
                 <form id="imageForm" action="{{ route('update.image', ['imageName' => session('imageName')]) }}" method="POST" enctype="multipart/form-data">
                     @csrf
@@ -55,7 +56,7 @@
             </div>
         @else
             <?php
-            session(['imageName' => '1714566433.jpg']);
+            session(['imageName' => '1714580814.jpg']);
             ?>
             <p>No hay imagen cargada</p>
         @endif
