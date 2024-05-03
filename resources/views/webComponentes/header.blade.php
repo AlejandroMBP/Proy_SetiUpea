@@ -26,19 +26,19 @@
                 </a><!-- /.phone-number -->
                 @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="main-menu__cart cart-toggler" target="_blank">
+                        <a href="{{ url('/dashboard') }}" class="main-menu__cart cart-toggler" target="_blank" title="volver">
                             <!--<i class="icon-magnifying-glass"></i>  class="main-menu__search search-toggler-->
                             <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
                         </a><!-- /.search btn -->
                         @else
-                            <a href="{{ route('login') }}" class="main-menu__cart cart-toggler" target="_blank">
+                            <a href="{{ route('login') }}" class="main-menu__cart cart-toggler" target="_blank" title="login">
                                 <i class="fas fa-sign-in-alt fa-lg"></i>
                                 <!--<i class="icon-shopping-cart"></i>
                             <span class="main-menu__cart__count">0</span>-->
 
                             </a><!-- /.cart btn -->
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="main-menu__cart cart-toggler" target="_blank">
+                                <a href="{{ route('register') }}" class="main-menu__cart cart-toggler" target="_blank" title="registrate">
                                     <i class="fas fa-user-plus fa-lg"></i>
                                 </a>
                             @endif
