@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 class ImageController extends Controller
 {
+    public function index(){
+        return view('componentesDasboard.headerConfig');
+    }
     public function uploadImage(Request $request)
     {
         $request->validate([
-            //'image' => 'required|image|dimensions:max_width=1024,max_height=768', 
-            'image' => 'required|image', 
+            //'image' => 'required|image|dimensions:max_width=1024,max_height=768',
+            'image' => 'required|image',
         ]);
         $image = $request->file('image');
         $imageName = time() . '.' . $image->getClientOriginalExtension();

@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Seguimineto</b> titulados',
+    'logo_img' => 'vendor/adminlte/dist/img/logo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -157,7 +157,7 @@ return [
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
-    'layout_dark_mode' => null,
+    'layout_dark_mode' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -198,7 +198,7 @@ return [
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => 'navbar-dark navbar-dark',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -257,7 +257,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'dashboard',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -312,27 +312,43 @@ return [
         ],
         [
             'text' => 'blog',
-            'url' => 'admin/blog',
+            'route' => 'admin/blog',
             'can' => 'manage-blog',
         ],
+        //inicio
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
+            'text' => 'Inicio',
+            'route' => 'dashboard',
+            'icon' => 'fas fa-home'
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'ADMINISTRADOR'],
         [
-            'text' => 'profile',
+            'text' => 'Usuarios',
             'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-users',
+        ],
+        [
+            'text' => 'publicaciones',
+            'route' => 'index.AdminDash',
+            'icon' => 'fas fa-clipboard-list',
+        ],
+        [
+            'text' => 'monitoreo',
+            'url' => 'admin/settings',
+            'icon' => '	fas fa-chart-bar',
+        ],
+        ['header'=>'PAGINAS'],
+        [
+            'text' => 'Perfil',
+            'url' => 'admin/settings',
+            'icon' => '	fas fa-user',
         ],
         [
             'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'route' => 'profile.edit',
+            'icon' => '	fas fa-bahai',
         ],
+        /*
         [
             'text' => 'multilevel',
             'icon' => 'fas fa-fw fa-share',
@@ -370,23 +386,7 @@ return [
                     'url' => '#',
                 ],
             ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
-        ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
-        ],
+        ],*/
     ],
 
     /*
