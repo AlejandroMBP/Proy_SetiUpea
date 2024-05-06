@@ -72,7 +72,7 @@
                     <div class="result"></div>
                 </div>
                 <div class="contact-two__thumb wow fadeInUp" data-wow-delay="400ms">
-                    <img src="assets/images/resources/logo_sie.png" alt="nisoz" />
+                    <img src="assets/images/resources/logoUTIC.png" alt="logo_Utic" />
                 </div>
             </div>
         </div>

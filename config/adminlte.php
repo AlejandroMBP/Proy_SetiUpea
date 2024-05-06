@@ -344,7 +344,7 @@ return [
             'icon' => '	fas fa-user',
         ],
         [
-            'text' => 'change_password',
+            'text' => 'Editar perfil',
             'route' => 'profile.edit',
             'icon' => '	fas fa-bahai',
         ],
