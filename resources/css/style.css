@@ -3214,11 +3214,11 @@ textarea.is-invalid.dataTable-input {
 
 .btn-primary, .introjs-tooltip .introjs-button.introjs-nextbutton {
   --bs-btn-color: #ffffff;
-  --bs-btn-bg: #1abc9c;
-  --bs-btn-border-color: #1abc9c;
+  --bs-btn-bg: #E53935;
+  --bs-btn-border-color: #E53935;
   --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-bg: #16a085;
-  --bs-btn-hover-border-color: #15967d;
+  --bs-btn-hover-bg: #e9614c;
+  --bs-btn-hover-border-color: #e9614c;
   --bs-btn-focus-shadow-rgb: 60, 198, 171;
   --bs-btn-active-color: #ffffff;
   --bs-btn-active-bg: #15967d;
@@ -30485,3 +30485,188 @@ table.dataTable.table-striped > tbody > tr.odd > * {
 /**  =====================
   36. Customizer css end
 ==========================  **/
+/* Estilos para los fieldsets */
+/* Estilos para los fieldsets */
+/* Variables CSS */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e67e22;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+/* Estilos para la sección de contenido */
+#contenido {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+fieldset:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Estilos para tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+tr:hover {
+  background-color: rgba(var(--accent-color), 0.1);
+}
+
+/* Estilos para listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Animaciones y transiciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#contenido {
+  animation: fadeIn 1s ease-in-out;
+}
+
+select,
+input[type="text"],
+textarea {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid var(--secondary-color);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+select:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+
+
+/********FOTO PERFIL*********/
+
+.chat-avtar {
+  position: relative;
+  display: inline-block;
+}
+
+.edit-icon {
+  display: none;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-avtar:hover .edit-icon {
+  display: block;
+}
+
+/*BOTON*/
+.edit-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 8px 16px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.elim-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 8px 16px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit-btn:hover {
+  background-color: #e55b0d;
+}
+
+.elim-btn:hover {
+  background-color: #e55b0d;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}

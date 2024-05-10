@@ -31,13 +31,7 @@
                     <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                 </div><!-- shape-one -->
                 <div class="main-slider-three__shape-bg">
-                    @if(session('imageName'))
-                        <img src="{{ asset('assets/images/backgrounds/' . session('imageName')) }}" alt="imagen" class="imagen-about-us">
-                    @else
-                        <img src="{{ asset('assets/images/backgrounds/1714580814.jpg') }}" alt="imagen predeterminada" class="imagen-about-us">
-                        <p>No hay imagen cargada</p>
-                    @endif
-
+                    <img src="{{ asset('assets/images/backgrounds/grupo.png')}}" alt="nisoz">
                 </div><!-- shape-backgorund -->
                 <div class="container">
                     <div class="row">
@@ -86,12 +80,7 @@
                     <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                 </div><!-- shape-one -->
                 <div class="main-slider-three__shape-bg">
-                    @if(session('imageName2'))
-                    <img src="{{ asset('assets/images/backgrounds/' . session('imageName2')) }}" alt="nizon" class="imagen-about-us" >
-                @else
-                    <img src="{{ asset('assets/images/backgrounds/Cerro.jpg') }}" alt="imagen predeterminada" class="imagen-about-us">
-                    <p>No hay imagen cargada</p>
-                @endif
+                    <img src="{{ asset('assets/images/backgrounds/fondo1.png')}}" alt="nisoz">
                 </div><!-- shape-backgorund -->
                 <div class="container">
                     <div class="row">
@@ -139,13 +128,7 @@
                     <img src="assets/images/shapes/shapes-2/slider-3-shape-3-1.png" alt="nisoz">
                 </div><!-- shape-one -->
                 <div class="main-slider-three__shape-bg">
-                    @if(session('imageName3'))
-                        <img src="{{ asset('assets/images/backgrounds/' . session('imageName3')) }}" alt="nizon" class="imagen-about-us" style="width: 1000px; height: 900px;">
-
-                        @else
-                            <img src="{{ asset('assets/images/backgrounds/1714566433.jpg') }}" alt="imagen predeterminada" class="imagen-about-us">
-                            <p>No hay imagen cargada</p>
-                        @endif
+                    <img src="{{ asset('assets/images/backgrounds/fondo2.png')}}" alt="nisoz">
                 </div><!-- shape-backgorund -->
                 <div class="container">
                     <div class="row">
